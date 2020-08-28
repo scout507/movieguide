@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body id="page-top">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav" style="height: 55px;">
-        <div class="container"><a class="navbar-brand" href="#page-top">Movie Guide</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><a class="navbar-brand" href="#page-top" onclick="location.reload();">Movie Guide</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto text-uppercase">
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#search">Search</a></li>
@@ -29,14 +31,14 @@
             </div>
         </div>
     </nav>
-    <header id="search" class="masthead" style="background-image:url('assets/img/header-bg.jpg');">
+    <header id="search" class="masthead" style="background-image: url('assets/img/header-bg.jpg');background-color: #000000;">
         <div class="container" id="hcon" style="height: 880px;">
             <div class="intro-text">
-                <div class="intro-lead-in"><span>Find out more about the movies you love!</span></div>
+                <div class="bounce animated intro-lead-in"><span>Find out more about the movies you love!</span></div>
                 <div class="intro-heading text-uppercase">
                     <div class="input-group input-group-lg">
                         <div class="input-group-prepend"></div><input class="form-control" type="text" id="input" placeholder="Search your favorite movie">
-                        <div class="input-group-append"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#sresult" onclick="getMovieID()">Go!</a></div>
+                        <div class="input-group-append"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#sresult" onclick="getMovieID()" style="color: rgb(0,0,0);">Go!</a></div>
                     </div>
                 </div>
             </div>
@@ -100,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section id="actor" style="display: none">
+    <section id="actor" style="display: none;">
         <div class="container" style="height: 700px;">
             <div class="row">
                 <div class="col text-center">
@@ -117,12 +119,12 @@
             </div>
         </div>
     </section>
-    <section id="portfolio" class="bg-light" style="display: none">
-        <div class="container">
+    <section id="portfolio" class="bg-light" style="display: none;">
+        <div class="container" id="rrow" style="width: 100%;">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">Other Movies you might like:</h2>
-                    <h3 class="section-subheading text-muted">Based on your search results</h3>
+                    <h3 class="section-subheading text-muted2">Based on your search results</h3>
                 </div>
             </div>
             <div class="row">
@@ -134,7 +136,7 @@
                             </div>
                         </div><img class="img-fluid" id="movimg1" src="assets/img/portfolio/1-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <p id="movname1" class="text-muted">Illustration</p>
+                        <p id="movname1" class="text-muted2">Illustration</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="50">
@@ -145,7 +147,7 @@
                             </div>
                         </div><img class="img-fluid" id="movimg2" src="assets/img/portfolio/2-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <p id="movname2" class="text-muted">Graphic Design</p>
+                        <p id="movname2" class="text-muted2">Graphic Design</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100">
@@ -156,7 +158,7 @@
                             </div>
                         </div><img class="img-fluid" id="movimg3" src="assets/img/portfolio/3-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <p id="movname3" class="text-muted">Identity</p>
+                        <p id="movname3" class="text-muted2">Identity</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="150">
@@ -167,7 +169,7 @@
                             </div>
                         </div><img class="img-fluid" id="movimg4" src="assets/img/portfolio/4-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <p id="movname4" class="text-muted">Branding</p>
+                        <p id="movname4" class="text-muted2">Branding</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">
@@ -178,7 +180,7 @@
                             </div>
                         </div><img class="img-fluid img-fluid" id="movimg5" src="assets/img/portfolio/5-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <p id="movname5" class="text-muted">Website Design</p>
+                        <p id="movname5" class="text-muted2">Website Design</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="250">
@@ -189,7 +191,7 @@
                             </div>
                         </div><img class="img-fluid" id="movimg6" src="assets/img/portfolio/6-thumbnail.jpg"></a>
                     <div class="portfolio-caption">
-                        <p id="movname6" class="text-muted">Photography</p>
+                        <p id="movname6" class="text-muted2">Photography</p>
                     </div>
                 </div>
             </div>
@@ -221,7 +223,7 @@
             </div>
         </div>
     </footer>
-    <div class="modal fade" role="dialog" tabindex="-1" id="Imprint" style="padding-top: 100px;">
+    <div class="modal fade" role="dialog" tabindex="-1" id="Imprint" style="padding-top: 100px;color: rgb(255,255,255);">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -230,24 +232,85 @@
                     <p><br>Dienstanbieter:<br>Der Betrieb disesr Web-App ist eine kostenlose Dienstleistung von Dominik Münch.<br><br>Anschrift:<br>Technische Hochschule Mittelhessen (THM)<br>University of Applied Sciences<br>Wiesenstraße 14<br>D-35390 Gießen
                         Telefon: +49 (0) 160 912 961 34<br>E-Mail: dominik.muench@mni.thm.de<br><br>Sitz der Gesellschaft: Gießen<br>Rechtsform: GmbH<br><br>Amtsgericht: Gießen HRB 3036<br>USt-IdNr.: DE 188 685 037<br><br></p>
                 </div>
-                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal">Close</button></div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal" style="color: rgb(0,0,0);">Close</button></div>
             </div>
         </div>
     </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="Privacy" style="padding-top: 100px;">
+    <div class="modal fade" role="dialog" tabindex="-1" id="Privacy" style="padding-top: 100px;color: rgb(255,255,255);">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Privacy</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <h4 class="modal-title">Privacy (German)</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
-                    <p><br>Dienstanbieter:<br>Der Betrieb disesr Web-App ist eine kostenlose Dienstleistung von Dominik Münch.<br><br>Anschrift:<br>Technische Hochschule Mittelhessen (THM)<br>University of Applied Sciences<br>Wiesenstraße 14<br>D-35390 Gießen
-                        Telefon: +49 (0) 160 912 961 34<br>E-Mail: dominik.muench@mni.thm.de<br><br>Sitz der Gesellschaft: Gießen<br>Rechtsform: GmbH<br><br>Amtsgericht: Gießen HRB 3036<br>USt-IdNr.: DE 188 685 037<br><br></p>
+                    <p><br>Datenschutz­erklärung<br><br>1. Datenschutz auf einen Blick<br><br>Allgemeine Hinweise Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.
+                        Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.<br><br>Datenerfassung
+                        auf dieser Website <strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong> Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser
+                        Website entnehmen. <strong>Wie erfassen wir Ihre Daten?</strong> Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.&nbsp;B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
+                        Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.&nbsp;B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).
+                        Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten. <strong>Wofür nutzen wir Ihre Daten?</strong> Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten.
+                        Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. <strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong> Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer
+                        gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung
+                        jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der
+                        zuständigen Aufsichtsbehörde zu. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.<br><br>Analyse-Tools und Tools von Dritt­anbietern Beim
+                        Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit sogenannten Analyseprogrammen. Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der folgenden Datenschutzerklärung.<br><br>2.
+                        Hosting und Content Delivery Networks (CDN)<br><br>Externes Hosting Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern
+                        des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden,handeln.
+                        Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres
+                        Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in
+                        Bezug auf diese Daten befolgen.<br><br>3. Allgemeine Hinweise und Pflicht­informationen<br><br>Datenschutz Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen
+                        Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten,
+                        mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht. Wir weisen darauf
+                        hin, dass die Datenübertragung im Internet (z.&nbsp;B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.<br><br>Hinweis zur verantwortlichen
+                        Stelle Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: Dominik Münch<br><br><br>Technische Hochschule Mittelhessen (THM)<br><br><br>University of Applied Sciences<br><br><br>Wiesenstraße 14<br><br><br>D-35390
+                        Gießen<br><br><br><br>Telefon: +491624097684<br><br><br>E-Mail: dominik.muench@mni.thm.de<br><br> Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel
+                        der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o. Ä.) entscheidet.<br><br>Hinweis zur Datenweitergabe in die USA Auf unserer Webseite sind unter anderem Tools von Unternehmen mit Sitz in den USA
+                        eingebunden. Wenn diese Tools aktiv sind, können Ihre personenbezogenen Daten an die US-Server der jeweiligen Unternehmen weitergegeben werden. Wir weisen darauf hin, dass die USA kein sicherer Drittstaat im Sinne des EU-Datenschutzrechts
+                        sind. US-Unternehmen sind dazu verpflichtet, personenbezogene Daten an Sicherheitsbehörden herauszugeben, ohne dass Sie als Betroffener hiergegen gerichtlich vorgehen könnten. Es kann daher nicht ausgeschlossen werden, dass US-Behörden
+                        (z.B. Geheimdienste) Ihre auf US-Servern befindlichen Daten zu Überwachungszwecken verarbeiten, auswerten und dauerhaft speichern. Wir haben auf diese Verarbeitungstätigkeiten keinen Einfluss.Widerruf Ihrer Einwilligung zur Datenverarbeitung
+                        Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt
+                        vom Widerruf unberührt.<br><br>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO) WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN
+                        SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING.
+                        DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN,
+                        WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH
+                        NACH ART. 21 ABS. 1 DSGVO). WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE
+                        DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG
+                        VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).<br><br>Beschwerde­recht bei der zuständigen Aufsichts­behörde Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere
+                        in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.<br><br>Recht
+                        auf Daten­übertrag­barkeit Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format
+                        aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.<br><br>Auskunft, Löschung und Berichtigung Sie haben im Rahmen
+                        der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung
+                        oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.<br><br>Recht auf Einschränkung der Verarbeitung Sie
+                        haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Das Recht auf Einschränkung der Verarbeitung
+                        besteht in folgenden Fällen: Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung
+                        der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen. Wenn
+                        wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer
+                        personenbezogenen Daten zu verlangen. Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen
+                        überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung
+                        abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen
+                        Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.<br><br>4. Datenerfassung auf dieser Website<br><br>Cookies Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind kleine Textdateien und
+                        richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende
+                        Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen&nbsp;oder eine automatische Löschung durch Ihren Webbrowser erfolgt. Teilweise können auch Cookies von
+                        Drittunternehmen auf Ihrem Endgerät gespeichert werden, wenn Sie unsere Seite betreten (Third-Party-Cookies). Diese ermöglichen uns oder Ihnen die Nutzung bestimmter Dienstleistungen des Drittunternehmens (z.B. Cookies zur Abwicklung
+                        von Zahlungsdienstleistungen). Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind technisch notwendig, da bestimmte Websitefunktionen ohne diese nicht funktionieren würden (z.B. die Warenkorbfunktion oder die Anzeige
+                        von Videos). Andere Cookies dienen dazu, das Nutzerverhalten auszuwerten&nbsp;oder Werbung anzuzeigen. Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs (notwendige Cookies) oder zur Bereitstellung bestimmter,
+                        von Ihnen erwünschter Funktionen (funktionale Cookies, z. B. für die Warenkorbfunktion) oder zur Optimierung der Website (z.B. Cookies zur Messung des Webpublikums) erforderlich sind, werden auf Grundlage von Art. 6 Abs. 1 lit.
+                        f DSGVO gespeichert, sofern keine andere Rechtsgrundlage angegeben wird. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste.
+                        Sofern eine Einwilligung zur Speicherung von Cookies abgefragt wurde, erfolgt die Speicherung der betreffenden Cookies ausschließlich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); die Einwilligung ist jederzeit
+                        widerrufbar. Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das
+                        automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein. Soweit Cookies von Drittunternehmen oder zu Analysezwecken eingesetzt
+                        werden, werden wir Sie hierüber im Rahmen dieser Datenschutzerklärung gesondert informieren und ggf. eine Einwilligung abfragen.<br><br>5. Plugins und Tools<br><br>Google Web Fonts Diese Seite nutzt zur einheitlichen Darstellung
+                        von Schriftarten so genannte Web Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen. Zu diesem Zweck
+                        muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse diese Website aufgerufen wurde. Die Nutzung von Google WebFonts erfolgt
+                        auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der einheitlichen Darstellung des Schriftbildes auf seiner Website. Sofern eine entsprechende Einwilligung abgefragt wurde (z.
+                        B. eine Einwilligung zur Speicherung von Cookies), erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung ist jederzeit widerrufbar. Wenn Ihr Browser Web Fonts nicht unterstützt,
+                        wird eine Standardschrift von Ihrem Computer genutzt. Weitere Informationen zu Google Web Fonts finden Sie unter <a href="https://developers.google.com/fonts/faq">https://developers.google.com/fonts/faq</a> und in der Datenschutzerklärung
+                        von Google: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a>.<br><br>Quelle: <a href="https://www.e-recht24.de">eRecht24</a><br><br></p>
                 </div>
-                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal">Close</button></div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal" style="color: rgb(0,0,0);">Close</button></div>
             </div>
         </div>
     </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="faq" style="padding-top: 100px;">
+    <div class="modal fade" role="dialog" tabindex="-1" id="faq" style="padding-top: 100px;color: rgb(255,255,255);">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -256,11 +319,11 @@
                     <p><br><strong>How does the search engine work?</strong><br>This site uses different API's for the search engine. The API's are listed at the Terms of Service section.<br><br><strong>Why is the information provided sometimes wrong?</strong><br>Unfortunately,
                         Wikipedia's search API can lead to wrong results sometimes.<br><br><br></p>
                 </div>
-                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal">Close</button></div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal" style="color: rgb(0,0,0);">Close</button></div>
             </div>
         </div>
     </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="Termsofservice" style="padding-top: 100px;">
+    <div class="modal fade" role="dialog" tabindex="-1" id="Termsofservice" style="padding-top: 100px;color: rgb(255,255,255);">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -269,15 +332,29 @@
                     <p>This App was build as a project for university and has no commercial use or intend.<br><br>This Web-App is providing data by using different web-API's.<br><br>All media and images used on this website are provided by&nbsp;<a href="https://www.themoviedb.org/">TMDb</a>.<br><br>Other
                         services/API's used on this website are provided by:<br><br><a href="https://www.wikipedia.org/">Wikipedia</a><br><a href="https://www.nytimes.com/">NewYorkTimes</a><br><a href="#">OMDb</a><br></p>
                 </div>
-                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal">Close</button></div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal" style="color: rgb(0,0,0);">Close</button></div>
             </div>
         </div>
-    </div>
+    </div><div><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#212529"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  }
+});
+</script></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/agency.js"></script>
+    <script src="assets/js/getID.js"></script>
 </body>
 
 </html>
