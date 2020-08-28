@@ -67,5 +67,6 @@ Here's how to install the app in a few steps:
 
    
 
-   
+## Known Bugs & Issues
 
+There is a bug with the animation on the "related" section. For some reason these animations stop working when the display property of other elements get changed through code, but resizing the browser window gets them working again.
