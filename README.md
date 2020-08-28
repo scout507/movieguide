@@ -41,7 +41,7 @@ The API provided by TMDb is very powerful and allows for a vast variety of diffe
 
 ## Color-Design
 
-For the color-design I used [Google's Material Design Color System](https://material.io/design/color/the-color-system.html#color-usage-and-palettes). Since this app is using a lot of different mostly colorfull images I didn't want to push things too far by using bright colors in the design. I also figured that most people would search for movies in the evening/night time, so I settled for a nice, relaxing grey tone as my primary color: \#212529. From there, I choose my secondary color, \#fec503, because it realy pops out in front of the darker primary color, while still not beeing overpowering to the eye.
+For the color-design I used [Google's Material Design Color System](https://material.io/design/color/the-color-system.html#color-usage-and-palettes). Since this app is using a lot of different mostly colorfull images I didn't want to push things too far by using bright colors in the design. I also figured that most people would search for movies in the evening/night time, so I settled for a nice, relaxing grey tone as my primary color: `#212529`. From there, I choose my secondary color, `#fec503`, because it realy pops out in front of the darker primary color, while still not beeing overpowering to the eye.
 
 After deciding on these two colors I used the tool to get some darker and brighter tones for things like highlights on hovering links etc.
 
