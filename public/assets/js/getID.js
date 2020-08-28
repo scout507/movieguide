@@ -41,7 +41,7 @@ function getMovieDetails(name){
             document.getElementById("director").innerHTML = dirarr[0];
 
     }
-    xmlHttp.open("GET", "http://www.omdbapi.com/?apikey=9991cf93&t=" + name);
+    xmlHttp.open("GET", "https://www.omdbapi.com/?apikey=9991cf93&t=" + name);
     xmlHttp.send();
 }
 
@@ -125,7 +125,7 @@ function getWiki(name, type){
     }
     if(type !=0) xmlHttp.open("GET", "https://en.wikipedia.org/w/api.php?origin=*&action=query&prop=extracts&format=json&formatversion=2&indexpageids&exintro=&titles=" + name);
     else {
-        xmlHttp.open("GET", "http://en.wikipedia.org/w/api.php?origin=*&action=query&prop=extracts&pageids="+ name +"&format=json&formatversion=2&exintro");
+        xmlHttp.open("GET", "https://en.wikipedia.org/w/api.php?origin=*&action=query&prop=extracts&pageids="+ name +"&format=json&formatversion=2&exintro");
     }
     xmlHttp.send();
 }
