@@ -2,6 +2,7 @@
 function getMovieID()
 {
     activateSection("sresult");
+    deactivateSection("actor");
     document.getElementById("hcon").style.height = "1085px";
     var search = document.getElementById("input").value
     var xmlHttp = new XMLHttpRequest();
@@ -69,6 +70,7 @@ function getSimilar(id, type){
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             var res = JSON.parse(this.responseText);
+            if(res.total_results == "0") deactivateSection("portfolio");
             document.getElementById("movimg1").src = "https://image.tmdb.org/t/p/original" + res.results[0].poster_path;
             document.getElementById("movname1").innerHTML = res.results[0].title;
             document.getElementById("rdesc-1").innerHTML = res.results[0].overview;
