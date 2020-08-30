@@ -7,7 +7,10 @@
   background: rgba(0,0,0,.9);
 }
 
-#portfolio * {
+@media (max-width: 1199.98px) {
+  .start {
+    height: auto;
+  }
 }
 
 .overlay {
@@ -101,7 +104,7 @@ backdrop {
 }
 
 .Puse {
-  font-size: 90%;
+  font-size: 75%;
   /*line-height: 40px;*/
   /*text-transform: none;*/
   font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;

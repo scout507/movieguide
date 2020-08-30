@@ -33,20 +33,20 @@
             </div>
         </div>
     </nav>
-    <header id="search" class="masthead" style="background-image: url('assets/img/header-bg.jpg');background-color: #000000;">
+    <header id="search" class="masthead start" style="background-image: url('assets/img/header-bg.jpg');background-color: #000000;/*@media (max-width: 575.98px);*/">
         <div class="container" id="hcon" style="height: 880px;">
             <div class="intro-text">
                 <div class="bounce animated intro-lead-in"><span>Find out more about the movies you love!</span></div>
                 <div class="intro-heading text-uppercase">
                     <div class="input-group input-group-lg">
-                        <div class="input-group-prepend"></div><input class="form-control" type="text" id="input" placeholder="Search your favorite movie">
+                        <div class="input-group-prepend"></div><input class="form-control" type="text" id="input" placeholder="Search your favorite movie (english title)">
                         <div class="input-group-append"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#sresult" onclick="getMovieID()" style="color: rgb(0,0,0);">Go!</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section id="sresult" class="backdrop" style="display: none;color: rgb(255,255,255);background: url(assets/img/sad-emoji-vector-icon.jpg) center / cover no-repeat;">
+    <section id="sresult" class="backdrop start" style="display: none; color: rgb(255,255,255);background: url(assets/img/sad-emoji-vector-icon.jpg) center / cover no-repeat;">
         <div class="container" style="background-color: rgba(0,0,0,0.74);min-height: 700px;">
             <div id="infoholder">
                 <div class="row row-expand" style="padding-top: 20px;padding-bottom: 20px;">
@@ -104,7 +104,7 @@
             </div>
         </div>
     </section>
-    <section id="actor" style="display: none;">
+    <section data-aos="fade-up" data-aos-duration="1000" id="actor" class="start" style="display: none;">
         <div class="container" style="height: 700px;">
             <div class="row">
                 <div class="col text-center">
@@ -123,7 +123,7 @@
     </section>
     <section id="portfolio" class="bg-light" style="display: none;">
         <div class="container" id="rrow" style="width: 100%;">
-            <div class="row">
+            <div class="row" data-aos="flip-down" data-aos-duration="1000">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">Other Movies you might like:</h2>
                     <h3 class="section-subheading text-muted2">Based on your search results</h3>
@@ -136,7 +136,7 @@
                             <div class="overlay">
                                 <p id="rdesc-1" class="text-white">Paragraph</p>
                             </div>
-                        </div><img class="img-fluid" id="movimg1" src="assets/img/portfolio/1-thumbnail.jpg"></a>
+                        </div><img class="img-fluid" id="movimg1" src=""></a>
                     <div class="portfolio-caption">
                         <p id="movname1" class="text-muted2">Illustration</p>
                     </div>
@@ -147,7 +147,7 @@
                             <div class="overlay">
                                 <p id="rdesc-2" class="text-white">Paragraph</p>
                             </div>
-                        </div><img class="img-fluid" id="movimg2" src="assets/img/portfolio/2-thumbnail.jpg"></a>
+                        </div><img class="img-fluid" id="movimg2" src=""></a>
                     <div class="portfolio-caption">
                         <p id="movname2" class="text-muted2">Graphic Design</p>
                     </div>
@@ -158,7 +158,7 @@
                             <div class="overlay">
                                 <p id="rdesc-3" class="text-white">Paragraph</p>
                             </div>
-                        </div><img class="img-fluid" id="movimg3" src="assets/img/portfolio/3-thumbnail.jpg"></a>
+                        </div><img class="img-fluid" id="movimg3" src=""></a>
                     <div class="portfolio-caption">
                         <p id="movname3" class="text-muted2">Identity</p>
                     </div>
@@ -169,7 +169,7 @@
                             <div class="overlay">
                                 <p id="rdesc-4" class="text-white">Paragraph</p>
                             </div>
-                        </div><img class="img-fluid" id="movimg4" src="assets/img/portfolio/4-thumbnail.jpg"></a>
+                        </div><img class="img-fluid" id="movimg4" src=""></a>
                     <div class="portfolio-caption">
                         <p id="movname4" class="text-muted2">Branding</p>
                     </div>
@@ -180,7 +180,7 @@
                             <div class="overlay">
                                 <p id="rdesc-5" class="text-white">Paragraph</p>
                             </div>
-                        </div><img class="img-fluid img-fluid" id="movimg5" src="assets/img/portfolio/5-thumbnail.jpg"></a>
+                        </div><img class="img-fluid img-fluid" id="movimg5" src=""></a>
                     <div class="portfolio-caption">
                         <p id="movname5" class="text-muted2">Website Design</p>
                     </div>
@@ -191,7 +191,7 @@
                             <div class="overlay">
                                 <p id="rdesc-6" class="text-white">Paragraph</p>
                             </div>
-                        </div><img class="img-fluid" id="movimg6" src="assets/img/portfolio/6-thumbnail.jpg"></a>
+                        </div><img class="img-fluid" id="movimg6" src=""></a>
                     <div class="portfolio-caption">
                         <p id="movname6" class="text-muted2">Photography</p>
                     </div>
@@ -231,8 +231,8 @@
                 <div class="modal-header">
                     <h4 class="modal-title">Imprint (German)</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body">
-                    <p><br>Dienstanbieter:<br>Der Betrieb disesr Web-App ist eine kostenlose Dienstleistung von Dominik Münch.<br><br>Anschrift:<br>Technische Hochschule Mittelhessen (THM)<br>University of Applied Sciences<br>Wiesenstraße 14<br>D-35390 Gießen
-                        Telefon: +49 (0) 160 912 961 34<br>E-Mail: dominik.muench@mni.thm.de<br><br>Sitz der Gesellschaft: Gießen<br>Rechtsform: GmbH<br><br>Amtsgericht: Gießen HRB 3036<br>USt-IdNr.: DE 188 685 037<br><br></p>
+                    <p><br>Dienstanbieter:<br>Der Betrieb diseser Web-App ist eine kostenlose Dienstleistung von Dominik Münch.<br><br>Anschrift:<br>Technische Hochschule Mittelhessen (THM)<br>University of Applied Sciences<br>Wiesenstraße 14<br>D-35390
+                        Gießen Telefon: +49 (0) 160 912 961 34<br>E-Mail: dominik.muench@mni.thm.de<br><br>Sitz der Gesellschaft: Gießen<br>Rechtsform: GmbH<br><br>Amtsgericht: Gießen HRB 3036<br>USt-IdNr.: DE 188 685 037<br><br></p>
                 </div>
                 <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal" style="color: rgb(0,0,0);">Close</button></div>
             </div>
