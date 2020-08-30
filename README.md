@@ -2,7 +2,7 @@
 
 Author: Dominik Münch
 
-The App can be found [here.](https://movieguide.herokuapp.com/)
+The app can be found [here.](https://movieguide.herokuapp.com/)
 
 
 
@@ -58,6 +58,8 @@ After deciding on these two colors I used the so called 'swatch' tool to get som
 I also used some variance of white and black, again because the pictures used are very colorfull to begin with, but since my primary color is grey, they're basicly just some brighter and darker version of my primary color.
 
 I obviously couldn't use any complementary or triadic color system since the complementary color for grey would also be just grey. I still tried to follow the rest of the guide by using my secondary color to highlight interactive elements like links and buttons.
+
+
 
 ## Installation
 
