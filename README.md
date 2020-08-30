@@ -71,7 +71,7 @@ Here's how to install the app in a few steps:
 
 1. Clone the git project 
 
-2. Navigate to the project using `cd MoviesGuide`
+2. Navigate to the project using `cd wbs_mashupapp`
 
 3. Type `npm install` in the console
 
